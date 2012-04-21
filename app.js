@@ -32,6 +32,9 @@ app.configure("production", function () {
  */
 // Index
 app.get("/", function (req, res, next) {
+	if (req.header("host") === "pazguillermo.com.ar") {
+		res.redirect("http://pazguille.me");
+	}
 	res.render("index");
 });
 
