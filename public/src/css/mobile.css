@@ -1,0 +1,77 @@
+body {
+	margin: 0 10px;
+}
+
+header {
+	background-image: none;
+	margin-bottom: 1em;
+}
+
+hgroup {
+	text-align: center;
+}
+
+hgroup:hover {
+	color: #B53D25;
+}
+
+h1 {
+	font-size: 2.5em;
+}
+
+h2 {
+	font-size: 1.3em;
+}
+
+h3 {
+	font-size: 1em;
+}
+
+.social li {
+	display: inline-block;
+	margin: 15px 10px;
+
+}
+
+.social li a {
+	text-indent: -170px;
+	width: 72px;
+	height: 72px;
+	
+}
+.sites {
+	text-align: center;
+}
+
+.sites li {
+	margin: 10px 5px;
+}
+
+.sites a {
+	display: block;
+}
+
+.about h2,
+.projects h2 {
+	text-align: center;
+	padding-top: 15px;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+/* Styles */
+	body {
+		font-size: 18px;
+	}
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 320px) {
+/* Styles */
+}
+
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width: 321px) {
+/* Styles */
+}

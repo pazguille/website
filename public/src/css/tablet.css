@@ -1,0 +1,111 @@
+body {
+	margin: 0 auto;
+	font-size: 30px;
+}
+
+header {
+		background: url("../assets/megaphone.png") no-repeat 0 0px;
+		margin: 0;
+}
+
+header h1 {
+	-webkit-transform: rotate(-2deg);
+	-moz-transform: rotate(-2deg);
+	-o-transform: rotate(-2deg);
+	transform: rotate(-2deg);
+}
+
+header h2 {
+	margin: 5px 0 0 60px;
+	-webkit-transform: rotate(1deg);
+	-moz-transform: rotate(1deg);
+	-o-transform: rotate(1deg);
+	transform: rotate(1deg);
+}
+
+hgroup {
+	text-align: left;
+}
+
+hgroup h2 {
+	margin-left: 0;
+}
+
+
+.about h2,
+.projects h2 {
+	padding-top: 25px;
+}
+
+.about {
+	margin-bottom: 30px;
+}
+
+.social li {
+	margin: 15px;
+}
+
+.social li a {
+	text-indent: -300px;
+	width: 92px;
+	height: 92px;
+}
+
+
+.sites li {
+	margin: 10px;
+	display: inline-block;
+	font-size: 0.7em;
+}
+
+/*--
+	Landscape view
+--*/
+@media screen and (min-width: 768px){
+/* Styles */
+	body {
+		max-width: 710px;
+	}
+
+	header {
+		-moz-background-size: 150px auto;
+		background-size: 200px auto;
+		height: 155px;
+		padding-left: 210px;
+	}
+}
+
+/*--
+	Desktop and laptops
+--*/
+@media only screen and (min-width: 1024px) {
+/* Styles */
+	body {
+		max-width: 830px;
+		font-size: 35px;
+	}
+
+
+	header {
+		padding-left: 260px;
+		height: 195px;
+		background-size: auto;
+		margin: 0;
+	}
+
+	.social li a {
+		text-indent: -300px;
+		width: 128px;
+		height: 128px;
+	}
+}
+
+}
+
+/*--
+	Large screens
+--*/
+@media only screen and (min-width : 1824px) {
+/* Styles */
+
+}
