@@ -33,9 +33,15 @@ hgroup h2 {
 }
 
 
-.about h2,
+.about h2 {
+	margin-top: 25px;
+	margin-bottom: 40px;
+}
+
 .projects h2 {
-	padding-top: 25px;
+	padding-top: 35px;
+	margin-bottom: 35px;
+	margin-top: 50px;
 }
 
 .about {
@@ -82,16 +88,17 @@ hgroup h2 {
 @media only screen and (min-width: 1024px) {
 /* Styles */
 	body {
-		max-width: 830px;
+		max-width: 900px;
 		font-size: 35px;
 	}
 
 
 	header {
-		padding-left: 260px;
+		padding-left: 300px;
 		height: 195px;
 		background-size: auto;
 		margin: 0;
+		margin-top: 50px;
 	}
 
 	.social li a {

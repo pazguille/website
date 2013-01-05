@@ -19,11 +19,11 @@ app.configure(function(){
 });
 
 app.configure("development", function () {
-	app.use(express.errorHandler({ dumpExceptions: true, showStack: true })); 
+	app.use(express.errorHandler({ dumpExceptions: true, showStack: true }));
 });
 
 app.configure("production", function () {
-	app.use(express.errorHandler()); 
+	app.use(express.errorHandler());
 });
 
 
@@ -47,4 +47,4 @@ app.listen(port);
 /**
  * Log
  */
-console.log("Express server listening on port %d", app.address().port);
+console.log("Express server listening on port 80");

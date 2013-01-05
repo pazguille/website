@@ -6,7 +6,7 @@
 
 body {
 	background: url("../assets/roughcloth.png") repeat scroll 0 0 #E1E4E4;
-	color:#666666;
+	color: #777;
 	font-family: ChunkFiveRegular, "Helvetica Neue", Helvetica, Arial, Sans-Serif;
 	font-size: 18px;
 }
@@ -20,14 +20,9 @@ header {
 	margin-bottom: 20px;
 }
 
-hgroup:hover {
-	color: #B53D25;
-}
-
 h1,
 h2,
 h3 {
-	text-shadow: 2px 2px 0 white, 4px 4px 0 #B8B7B8;
 	margin: 10px 0;
 	line-height: 1em;
 }
@@ -49,7 +44,6 @@ h3 {
 	background-image:url("../assets/color/twitter.png");
 }
 
-
 #linkedin {
 	background-image:url("../assets/color/linkedin.png");
 }
@@ -62,55 +56,8 @@ h3 {
 	background-image:url("../assets/color/email.png");
 }
 
-#google {
-	background-image:url("../assets/color/plus.png");
-}
-
-#youtube {
-	background-image:url("../assets/color/youtube.png");
-}
-
-#skype {
-	background-image:url("../assets/color/skype.png");
-}
-
-#playfire {
-	background-image:url("../assets/color/playfire.png");
-}
-
-#weat {
-	background-image:url("../assets/color/weat.png");
-}
-
-#miso {
-	background-image:url("../assets/color/miso.png");
-}
-
-#amazon {
-	background-image:url("../assets/color/amazon.png");
-}
-
 #github {
 	background-image:url("../assets/color/github.png");
-}
-
-#klout {
-	background-image:url("../assets/color/klout.png");
-}
-
-#forrst {
-	background-image:url("../assets/color/forrst.png");
-}
-
-#geeklist {
-	background-image:url("../assets/color/geeklist.png");
-}
-
-#skills {
-	background-image:url("../assets/color/skills.png");
-}
-#pin {
-	background-image:url("../assets/color/pin.png");
 }
 
 .projects h2,
@@ -131,7 +78,7 @@ h3 {
 
 .sites a {
 	background: #FFFFFF;
-	color: #666666;
+	color: #777;
 	padding: 10px;
 	line-height: 1em;
 	text-decoration: none;
