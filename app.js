@@ -1,8 +1,8 @@
 /**
  * Module dependencies.
  */
-var express = require("express"),
-	gzippo = require("gzippo"),
+var express = require('express'),
+	gzippo = require('gzippo'),
 	port = process.argv[2] || 80,
 	app = module.exports = express.createServer();
 
@@ -18,11 +18,11 @@ app.configure(function(){
 	app.use(gzippo.staticGzip(__dirname + '/public'));
 });
 
-app.configure("development", function () {
+app.configure('development', function () {
 	app.use(express.errorHandler({ dumpExceptions: true, showStack: true }));
 });
 
-app.configure("production", function () {
+app.configure('production', function () {
 	app.use(express.errorHandler());
 });
 
@@ -31,11 +31,16 @@ app.configure("production", function () {
  * Routes.
  */
 // Index
-app.get("/", function (req, res, next) {
-	if (req.header("host") === "pazguillermo.com.ar") {
-		res.redirect("http://pazguille.me");
+app.get('/', function (req, res, next) {
+	if (req.header('host') === 'pazguillermo.com.ar') {
+		res.redirect('http://pazguille.me');
 	}
-	res.render("index");
+	res.render('index');
+});
+
+// Blog
+app.get('/blog', function (req, res, next) {
+	res.redirect('http://blog.pazguille.me/');
 });
 
 
@@ -47,4 +52,4 @@ app.listen(port);
 /**
  * Log
  */
-console.log("Express server listening on port 80");
+console.log('Express server listening on port 80');
