@@ -1,27 +1,17 @@
 body {
 	margin: 0 auto;
-	font-size: 30px;
+	font-size: 35px;
+	letter-spacing: -2px;
 }
 
 header {
 		background: url("../assets/megaphone.png") no-repeat 0 0px;
 		margin: 0;
 }
-
-header h1 {
-	-webkit-transform: rotate(-2deg);
-	-moz-transform: rotate(-2deg);
-	-o-transform: rotate(-2deg);
-	transform: rotate(-2deg);
-}
-
+º
 header h2 {
 	font-size: 1.2em;
 	margin: 5px 0 0 60px;
-	-webkit-transform: rotate(1deg);
-	-moz-transform: rotate(1deg);
-	-o-transform: rotate(1deg);
-	transform: rotate(1deg);
 }
 
 hgroup {
@@ -53,7 +43,7 @@ hgroup h2 {
 }
 
 .social li a {
-	text-indent: -300px;
+	text-indent: -330px;
 	width: 92px;
 	height: 92px;
 }
@@ -89,7 +79,7 @@ hgroup h2 {
 /* Styles */
 	body {
 		max-width: 900px;
-		font-size: 35px;
+		font-size: 40px;
 	}
 
 
@@ -102,7 +92,7 @@ hgroup h2 {
 	}
 
 	.social li a {
-		text-indent: -300px;
+		text-indent: -330px;
 		width: 128px;
 		height: 128px;
 	}

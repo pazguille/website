@@ -1,14 +1,8 @@
-﻿@font-face {
-	font-family: ChunkFiveRegular;
-	src: url('../fonts/Chunkfive.eot');
-	src: local('../fonts/ChunkFiveRegular'), url(../fonts/Chunkfive.ttf) format("truetype");
-}
-
-body {
+﻿body {
 	background: url("../assets/roughcloth.png") repeat scroll 0 0 #E1E4E4;
 	color: #777;
-	font-family: ChunkFiveRegular, "Helvetica Neue", Helvetica, Arial, Sans-Serif;
-	font-size: 18px;
+	font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+	font-size: 16px;
 }
 
 hr {
@@ -81,6 +75,7 @@ h3 {
 	color: #777;
 	padding: 10px;
 	line-height: 1em;
+	font-weight: bold;
 	text-decoration: none;
 	-webkit-box-shadow: 2px 2px 0 white, 4px 4px 0 #B8B7B8;
 	-moz-box-shadow: 2px 2px 0 white, 4px 4px 0 #B8B7B8;
