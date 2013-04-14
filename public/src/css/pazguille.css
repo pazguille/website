@@ -1,7 +1,12 @@
-﻿body {
-	background: url("../assets/roughcloth.png") repeat scroll 0 0 #E1E4E4;
-	color: #777;
-	font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+﻿html {
+	border-top: 7px solid #B53D25;
+}
+
+body {
+	background: #FFF;
+	color: #4C4C4C;
+	font-family: 'Gentium Book Basic', Georgia, serif;
+	font-weight: 400;
 	font-size: 16px;
 }
 
@@ -19,6 +24,7 @@ h2,
 h3 {
 	margin: 10px 0;
 	line-height: 1em;
+	font-weight: 400;
 }
 
 .social {
@@ -35,23 +41,23 @@ h3 {
 }
 
 #twitter {
-	background-image:url("../assets/color/twitter.png");
+	background-image:url("../assets/twitter.png");
 }
 
 #linkedin {
-	background-image:url("../assets/color/linkedin.png");
+	background-image:url("../assets/linkedin.png");
 }
 
 #facebook {
-	background-image:url("../assets/color/face.png");
+	background-image:url("../assets/facebook.png");
 }
 
 #email {
-	background-image:url("../assets/color/email.png");
+	background-image:url("../assets/email.png");
 }
 
 #github {
-	background-image:url("../assets/color/github.png");
+	background-image:url("../assets/github.png");
 }
 
 .projects h2,

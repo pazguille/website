@@ -32,9 +32,6 @@ app.configure('production', function () {
  */
 // Index
 app.get('/', function (req, res, next) {
-	if (req.header('host') === 'pazguillermo.com.ar') {
-		res.redirect('http://pazguille.me');
-	}
 	res.render('index');
 });
 
@@ -43,6 +40,10 @@ app.get('/blog', function (req, res, next) {
 	res.redirect('http://blog.pazguille.me/');
 });
 
+// Resume
+app.get('/resume', function (req, res, next) {
+	res.redirect('http://pazguille.github.io/resume/');
+});
 
 /**
  * App start
