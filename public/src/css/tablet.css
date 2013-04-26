@@ -14,11 +14,11 @@ header h2 {
 	margin: 5px 0 0 60px;
 }
 
-hgroup {
+.hgroup {
 	text-align: left;
 }
 
-hgroup h2 {
+.hgroup h2 {
 	margin-left: 0;
 }
 
@@ -92,7 +92,6 @@ hgroup h2 {
 	}
 
 	.social li a {
-		text-indent: -330px;
 		width: 128px;
 		height: 128px;
 	}
