@@ -15,8 +15,15 @@ hr {
 }
 
 header {
-	background: url("../assets/megaphone.png") no-repeat scroll 0 21px transparent;
-	margin-bottom: 20px;
+	text-align: center;
+	margin: 20px 0;
+}
+
+.picture {
+	background: transparent url("../assets/favicon.ico") center center no-repeat;
+	-moz-background-size: cover;
+	background-size: cover;
+	border-radius: 100%;
 }
 
 h1,
@@ -33,7 +40,7 @@ h3 {
 
 
 .social li a {
-	background: transparent url("") center center no-repeat;
+	background: transparent center center no-repeat;
 	-moz-background-size: cover;
 	background-size: cover;
 	display: inline-block;
@@ -58,6 +65,10 @@ h3 {
 
 #github {
 	background-image:url("../assets/github.png");
+}
+
+#blog {
+	background-image:url("../assets/blog.png");
 }
 
 .projects h2,

@@ -1,14 +1,12 @@
 body {
 	margin: 0 auto;
 	font-size: 35px;
-	letter-spacing: -2px;
 }
 
 header {
-		background: url("../assets/megaphone.png") no-repeat 0 0px;
-		margin: 0;
+	margin: 50px 0 0;
 }
-º
+
 header h2 {
 	font-size: 1.2em;
 	margin: 5px 0 0 60px;
@@ -16,12 +14,14 @@ header h2 {
 
 .hgroup {
 	text-align: left;
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 45px;
 }
 
 .hgroup h2 {
 	margin-left: 0;
 }
-
 
 .about h2 {
 	margin-top: 25px;
@@ -63,13 +63,6 @@ header h2 {
 	body {
 		max-width: 710px;
 	}
-
-	header {
-		-moz-background-size: 150px auto;
-		background-size: 200px auto;
-		height: 155px;
-		padding-left: 210px;
-	}
 }
 
 /*--
@@ -80,15 +73,6 @@ header h2 {
 	body {
 		max-width: 900px;
 		font-size: 40px;
-	}
-
-
-	header {
-		padding-left: 300px;
-		height: 195px;
-		background-size: auto;
-		margin: 0;
-		margin-top: 50px;
 	}
 
 	.social li a {
