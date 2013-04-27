@@ -1,6 +1,5 @@
 body {
 	margin: 0 auto;
-	font-size: 35px;
 }
 
 header {
@@ -8,7 +7,6 @@ header {
 }
 
 header h2 {
-	font-size: 1.2em;
 	margin: 5px 0 0 60px;
 }
 
@@ -72,7 +70,6 @@ header h2 {
 /* Styles */
 	body {
 		max-width: 900px;
-		font-size: 40px;
 	}
 
 	.social li a {
