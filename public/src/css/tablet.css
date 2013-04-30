@@ -3,7 +3,7 @@ body {
 }
 
 header {
-	margin: 50px 0 0;
+	margin: 35px 0 0;
 }
 
 header h2 {
@@ -11,10 +11,7 @@ header h2 {
 }
 
 .hgroup {
-	text-align: left;
-	display: inline-block;
 	vertical-align: middle;
-	margin-left: 45px;
 }
 
 .hgroup h2 {
@@ -28,24 +25,13 @@ header h2 {
 
 .projects h2 {
 	padding-top: 35px;
-	margin-bottom: 35px;
-	margin-top: 50px;
+	margin-bottom: 15px;
+	margin-top: 35px;
 }
 
 .about {
 	margin-bottom: 30px;
 }
-
-.social li {
-	margin: 15px;
-}
-
-.social li a {
-	text-indent: -330px;
-	width: 92px;
-	height: 92px;
-}
-
 
 .sites li {
 	margin: 10px;
@@ -72,9 +58,10 @@ header h2 {
 		max-width: 900px;
 	}
 
-	.social li a {
-		width: 128px;
-		height: 128px;
+	.hgroup {
+		text-align: left;
+		margin-left: 45px;
+		display: inline-block;
 	}
 }
 

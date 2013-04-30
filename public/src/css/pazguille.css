@@ -1,4 +1,15 @@
-﻿html {
+﻿@font-face {
+    font-family: 'entypo';
+    src: url('../assets/entypo.eot');
+    src: url('../assets/entypo.eot?#iefix') format('embedded-opentype'),
+         url('../assets/entypo.woff') format('woff'),
+         url('../assets/entypo.ttf') format('truetype'),
+         url('../assets/entypo.svg#entypo') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
 	border-top: 7px solid #B53D25;
 }
 
@@ -7,7 +18,8 @@ body {
 	color: #4C4C4C;
 	font-family: 'Gentium Book Basic', Georgia, serif;
 	font-weight: 400;
-	font-size: 20px;
+	font-size: 18px;
+	line-height: 1.5em;
 }
 
 hr {
@@ -36,39 +48,44 @@ h3 {
 
 .social {
 	text-align: center;
+	margin: 30px 0;
 }
 
+.social li {
+	display: inline-block;
+	margin: 15px 22px 15px 0;
+}
 
 .social li a {
-	background: transparent center center no-repeat;
-	-moz-background-size: cover;
-	background-size: cover;
-	display: inline-block;
-	overflow: hidden;
+	font-family: 'entypo';
+    font-size: 3em;
+    vertical-align: middle;
+    text-decoration: none;
+    color: #4C4C4C;
 }
 
-#twitter {
-	background-image:url("../assets/twitter.png");
+#twitter:hover {
+	color: #1499E7;
 }
 
-#linkedin {
-	background-image:url("../assets/linkedin.png");
+#linkedin:hover {
+	color: #0C62A6;
 }
 
-#facebook {
-	background-image:url("../assets/facebook.png");
+#facebook:hover {
+	color: #2D3E88;
 }
 
-#email {
-	background-image:url("../assets/email.png");
+#email:hover {
+	color: #CE1011;
 }
 
-#github {
-	background-image:url("../assets/github.png");
+#github:hover {
+	color: #000000;
 }
 
-#blog {
-	background-image:url("../assets/blog.png");
+#blog:hover {
+	color: #2A435F;
 }
 
 .projects h2,

@@ -22,18 +22,6 @@ h3 {
 	font-size: 1em;
 }
 
-.social li {
-	display: inline-block;
-	margin: 15px 10px;
-
-}
-
-.social li a {
-	text-indent: -170px;
-	width: 72px;
-	height: 72px;
-
-}
 .sites {
 	text-align: center;
 }
