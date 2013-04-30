@@ -31,6 +31,22 @@ header {
 	margin: 20px 0;
 }
 
+.switch strong {
+    margin-right: .5em;
+    padding-right: .5em;
+    border-right: 1px solid #4C4C4C;
+    font-weight: 400;
+}
+
+.switch a {
+    color: #B53D25;
+    text-decoration: none;
+}
+
+.switch a:hover {
+    text-decoration: underline;
+}
+
 .picture {
 	background: transparent url("../assets/favicon.ico") center center no-repeat;
 	-moz-background-size: cover;
