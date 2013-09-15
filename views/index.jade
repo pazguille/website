@@ -10,17 +10,17 @@ header
         h2 I'm a front-end developer!
 
 section.projects
-    h2 About me
+    h2.projects-title About me
 
     p
         | I am a proactive and creative front-end developer. I am currently working at MercadoLibre in Buenos Aires, Argentina.
-        | I enjoy taking advantage of awesome new browser features without breaking the experience on older browser. I am up to date with IT trends and innovation. I really love to experiment with new web technologies, APIs and standards.
+        | I enjoy taking advantage of awesome new browser features without breaking the experience on older browser. I am up to date with IT trends and innovation. I really love experimenting with new web technologies, APIs and standards.
 
     p
         | I write semantic HTML and CSS code that works perfectly on all modern browsers. I love JavaScript and I know its good parts. I keep a close eye on JavaScript development client and server side, user interfaces, interaction design, web technologies and web standards.
 
     p
-        | I've been developing clean, valid and compatible websites, libraries and UI widgets since the last 5 years. I am skilled to define and maintain well crafted, complex and large libraries.
+        | I've been developing clean, valid and compatible websites, libraries and UI widgets for the last 5 years. I am skilled to define and maintain well crafted, complex and large libraries.
 
     ul.social
             li
@@ -34,57 +34,139 @@ section.projects
             li
                 a(href="mailto:guille87paz@gmail.com", id="email") &#xe008;
 
-    h2 Open Source
-    ul.sites
-        li
-            a(href="http://www.chico-ui.com.ar/", target="_blank", title="Chico UI is the MercadoLibre's Visual Framework for the web.") Chico UI
-        li
-            a(href="https://github.com/pazguille/oops.js", target="_blank", title="Oops! JS is an Object Oriented JavaScript Library") OopsJS
-        li
-            a(href="https://github.com/pazguille/CORS", target="_blank", title="Simple and tiny CORS component") CORS
-        li
-            a(href="https://github.com/pazguille/jvent", target="_blank", title="Event Emitter Class for the browser based on NodeJS EventEmitter") Jvent
-        li
-            a(href="https://github.com/pazguille/viewport", target="_blank", title="Gets the dimensions of the Viewport and beyond.") Viewport
-        li
-            a(href="https://github.com/pazguille/templitJS", target="_blank", title="Semantic and simple client-side template engine.") TemplitJS
-        li
-            a(href="https://github.com/pazguille/jquery.cors", target="_blank", title="Simple and tiny CORS jQuery Plugin.") jQuery Cors
-        li
-            a(href="https://github.com/pazguille/editable", target="_blank", title="Simple and tiny in-place Editor component.") Editable
-        li
-            a(href="https://github.com/pazguille/editable-plugin", target="_blank", title="Simple and tiny in-place Editor.") Editable plugin
-        li
-            a(href="https://github.com/pazguille/route66", target="_blank", title="Routing for web browsers.") Route66
-        li
-            a(href="https://github.com/pazguille/sal.js", target="_blank", title="Simple Ajax Library.") Sal JS
-        li
-            a(href="https://github.com/pazguille/hotkeys.js", target="_blank", title="A simple library for add/remove hotkeys to DOM.") Hotkeys JS
-        li
-            a(href="https://github.com/pazguille/saw.js", target="_blank", title="Simple Ajax for Web Workers.") Saw JS
-        li
-            a(href="https://github.com/pazguille/chico.bootstrap", target="_blank", title="A Chico UI flavor based on Twitter Bootstrap.") Chico Bootstrap
-        li
-            a(href="https://github.com/pazguille/give.me.js", target="_blank", title="A loader JavaScript files.") GiveMe JS
+    h2.projects-title Projects
+    ul.projects-list
+        li.github-box-wrap
+            article.github-box
+                header.github-box-header
+                    h3
+                        a(href="https://github.com/pazguille/viewport") viewport
+                    .github-stats
+                        a.repo-stars(title="Stars", data-icon="7", href="https://github.com/pazguille/viewport/stargazers") 440
+                        a.repo-forks(title="Forks", data-icon="f", href="https://github.com/pazguille/viewport/network") 23
+                p.github-box-content
+                    | Gets the dimensions of the Viewport and beyond.
 
-    h2 My Sites
+        li.github-box-wrap
+            article.github-box
+                header.github-box-header
+                    h3
+                        a(href="https://github.com/frontend-rescue/keep-up-to-date") keep-up-to-date
+                    .github-stats
+                        a.repo-stars(title="Stars", data-icon="7", href="https://github.com/frontend-rescue/keep-up-to-date/stargazers") 250
+                        a.repo-forks(title="Forks", data-icon="f", href="https://github.com/frontend-rescue/keep-up-to-date/network") 102
+                p.github-box-content
+                    | How to keep up to date on Front-end Technologies? - The Recipe
+
+        li.github-box-wrap
+            article.github-box
+                header.github-box-header
+                    h3
+                        a(href="https://github.com/mercadolibre/chico") chico
+                    .github-stats
+                        a.repo-stars(title="Stars", data-icon="7", href="https://github.com/mercadolibre/chico/stargazers") 236
+                        a.repo-forks(title="Forks", data-icon="f", href="https://github.com/mercadolibre/chico/network") 39
+                p.github-box-content
+                    | Chico UI is the MercadoLibre's Visual Framework for the web.
+
+        li.github-box-wrap
+            article.github-box
+                header.github-box-header
+                    h3
+                        a(href="https://github.com/pazguille/flipload") flipload
+                    .github-stats
+                        a.repo-stars(title="Stars", data-icon="7", href="https://github.com/pazguille/flipload/stargazers") 218
+                        a.repo-forks(title="Forks", data-icon="f", href="https://github.com/pazguille/flipload/network") 17
+                p.github-box-content
+                    | Flipping elements and show a loading indicator easily. &nbsp;
+                    a(href="http://pazguille.github.io/flipload/") http://pazguille.github.io/flipload/
+
+        li.github-box-wrap
+            article.github-box
+                header.github-box-header
+                    h3
+                        a(href="https://github.com/pazguille/is-near") is-near
+                    .github-stats
+                        a.repo-stars(title="Stars", data-icon="7", href="https://github.com/pazguille/is-near/stargazers") 92
+                        a.repo-forks(title="Forks", data-icon="f", href="https://github.com/pazguille/is-near/network") 6
+                p.github-box-content
+                    | Calculates if the mouse position is near to a given element. &nbsp;
+                    a(href="http://pazguille.github.io/is-near/") http://pazguille.github.io/is-near/
+
+        li.github-box-wrap
+            article.github-box
+                header.github-box-header
+                    h3
+                        a(href="https://github.com/pazguille/shuffle-array") shuffle-array
+                    .github-stats
+                        a.repo-stars(title="Stars", data-icon="7", href="https://github.com/pazguille/shuffle-array/stargazers") 78
+                        a.repo-forks(title="Forks", data-icon="f", href="https://github.com/pazguille/shuffle-array/network") 6
+                p.github-box-content
+                    | Randomize the order of the elements in a given array. &nbsp;
+                    a(href="http://pazguille.github.io/shuffle-array/") http://pazguille.github.io/shuffle-array/
+
+        li.github-box-wrap
+            article.github-box
+                header.github-box-header
+                    h3
+                        a(href="https://github.com/pazguille/sticky") sticky
+                    .github-stats
+                        a.repo-stars(title="Stars", data-icon="7", href="https://github.com/pazguille/sticky/stargazers") 62
+                        a.repo-forks(title="Forks", data-icon="f", href="https://github.com/pazguille/sticky/network") 2
+                p.github-box-content
+                    | Stick elements to the top of the viewport when the user scrolls down. &nbsp;
+                    a(href="http://pazguille.github.io/sticky/") http://pazguille.github.io/sticky/
+
+        li.github-box-wrap
+            article.github-box
+                header.github-box-header
+                    h3
+                        a(href="https://github.com/pazguille/horwheel") horwheel
+                    .github-stats
+                        a.repo-stars(title="Stars", data-icon="7", href="https://github.com/pazguille/horwheel/stargazers") 60
+                        a.repo-forks(title="Forks", data-icon="f", href="https://github.com/pazguille/horwheel/network") 7
+                p.github-box-content
+                    | Scroll horizontally with mouse wheel. &nbsp;
+                    a(href="http://pazguille.github.io/horwheel/") http://pazguille.github.io/horwheel/
+
+        li.github-box-wrap
+            article.github-box
+                header.github-box-header
+                    h3
+                        a(href="https://github.com/pazguille/aload") aload
+                    .github-stats
+                        a.repo-stars(title="Stars", data-icon="7", href="https://github.com/pazguille/aload/stargazers") 37
+                        a.repo-forks(title="Forks", data-icon="f", href="https://github.com/pazguille/aload/network") 2
+                p.github-box-content
+                    | Loads images, scripts, styles, iframes, videos and audio asynchronously. &nbsp;
+                    a(href="http://pazguille.github.io/aload/") http://pazguille.github.io/aload/
+
+        li.github-box-wrap
+            article.github-box
+                header.github-box-header
+                    h3
+                        a(href="https://github.com/pazguille/jvent") jvent
+                    .github-stats
+                        a.repo-stars(title="Stars", data-icon="7", href="https://github.com/pazguille/jvent/stargazers") 28
+                        a.repo-forks(title="Forks", data-icon="f", href="https://github.com/pazguille/jvent/network") 3
+                p.github-box-content
+                    | Event Emitter Class for the browser based on NodeJS EventEmitter.
+
+    h2.projects-title Sites
     ul.sites
         li
-            a(href="http://www.weat.com.ar/", target="_blank") Weat
+            a(href="http://weat.com.ar/", target="_blank") Weat
         li
-            a(href="http://www.pintubest.com/", target="_blank") Pintubest
+            a(href="http://shatelly.com/", target="_blank") Shatelly
         li
             a(href="http://www.chainedstory.com/", target="_blank") ChainedStory
         li
-            a(href="http://www.tastishes.com/", target="_blank") Tastishes
+            a(href="http://tastishes.com/", target="_blank") Tastishes
         li
-            a(href="http://www.thegeekstickers.com/", target="_blank") Geek Stickers
+            a(href="http://Daturi.me/", target="_blank") Daturi
+        li
+            a(href="http://thegeekstickers.com/", target="_blank") Geek Stickers
 
-    h2 My Chrome Extensions
-    ul.sites
-        li
-            a(href="https://chrome.google.com/webstore/detail/iibopnefpofljfbmnjleebgkfailifdf", target="_blank") Hotgram
-        li
-            a(href="https://chrome.google.com/webstore/detail/bpgigpoaejpinfkjigcnmdjhgoboidia", target="_blank") MercadoLibre Seeker
-        li
-            a(href="https://chrome.google.com/webstore/detail/pintubest/cfbelnhekemojdidbiehfpdaepmhohgh", target="_blank") Pintubest
+footer
+    | with &nbsp;
+    i.heart ❤
