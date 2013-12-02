@@ -3,7 +3,7 @@ body {
 }
 
 header.main {
-    background: url('../assets/code.jpeg') no-repeat center center;
+    background: url('../assets/code.jpg') no-repeat center center;
     background-size: cover;
     background-attachment: fixed;
 }
