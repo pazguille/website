@@ -1,14 +1,29 @@
-header
-    nav.switch
-        strong Who I Am?
-        a(href="http://blog.pazguille.me") My blog
+header.main
 
-    img(class="picture", src="https://secure.gravatar.com/avatar/f8a70e01eddbadc5e4f9876ff34494fa?size=220", alt="Guille Paz", width="220", height="220")
+    .presentation
 
-    h1 Guille Paz
-    h2 I'm a front-end developer!
+        img(class="picture", src="https://secure.gravatar.com/avatar/f8a70e01eddbadc5e4f9876ff34494fa?size=220", alt="Guille Paz", width="220", height="220")
 
-section.projects
+        h1 Guille Paz
+        h2 I'm a front-end developer.
+
+        ul.social
+            li
+                a(href="http://www.linkedin.com/in/pazguillermo", id="linkedin", target="_blank") &#xe006;
+            li
+                a(href="https://github.com/pazguille", id="github", target="_blank") &#xe000;
+            li
+                a(href="http://twitter.com/pazguille", id="twitter", target="_blank") &#xe001;
+            li
+                a(href="http://www.facebook.com/guillotepaz", id="facebook", target="_blank") &#xe002;
+            li
+                a(href="mailto:guille87paz@gmail.com", id="email") &#xe008;
+
+        nav.switch
+            a(href="#about-me") About me
+            a(href="http://blog.pazguille.me") My blog
+
+section#about-me.projects
     h2.projects-title About me
 
     p
@@ -24,18 +39,6 @@ section.projects
     p
         | I've been developing clean, valid and compatible websites, libraries and UI widgets for the last 5 years.
         | I am skilled to define and maintain well crafted, complex and large libraries.
-
-    ul.social
-            li
-                a(href="http://www.linkedin.com/in/pazguillermo", id="linkedin", target="_blank") &#xe006;
-            li
-                a(href="https://github.com/pazguille", id="github", target="_blank") &#xe000;
-            li
-                a(href="http://twitter.com/pazguille", id="twitter", target="_blank") &#xe001;
-            li
-                a(href="http://www.facebook.com/guillotepaz", id="facebook", target="_blank") &#xe002;
-            li
-                a(href="mailto:guille87paz@gmail.com", id="email") &#xe008;
 
     h2.projects-title Projects
     ul.projects-list

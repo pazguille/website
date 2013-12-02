@@ -22,10 +22,6 @@
     font-style: normal;
 }
 
-html {
-    border-top: 7px solid #B53D25;
-}
-
 body {
     background: #FFF;
     color: #4C4C4C;
@@ -41,19 +37,18 @@ hr {
 
 header {
     text-align: center;
-    margin: 20px 0;
-}
-
-.switch strong {
-    margin-right: .5em;
-    padding-right: .5em;
-    border-right: 1px solid #4C4C4C;
-    font-weight: 400;
 }
 
 .switch a {
+    margin-right: .5em;
+    padding-right: .5em;
+    font-weight: 400;
     color: #B53D25;
     text-decoration: none;
+}
+
+.switch a:first-of-type {
+    border-right: 1px solid #B53D25;
 }
 
 .switch a:hover {
@@ -110,7 +105,7 @@ h3 {
 }
 
 #github:hover {
-    color: #000000;
+    color: #FFF;
 }
 
 #blog:hover {

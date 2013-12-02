@@ -2,23 +2,40 @@ body {
     margin: 0 auto;
 }
 
-header {
-    margin: 35px 0 0;
+header.main {
+    background: url('../assets/code.jpeg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.presentation {
+    padding: 4em 0;
+    background-color: rgba(0,0,0,.5);
+    color: #FFF;
+    font-size: 1.6em;
+    text-shadow: 1px -1px #000;
+}
+
+.social li a {
+    font-size: 1.8em;
+    color: #f9f9f9;
 }
 
 .switch {
-    position: fixed;
-    top: 20px;
-    left: 20px;
+    font-size: .7em;
 }
 
-header h2 {
-    margin: 5px 0 0 60px;
+.switch a {
+    color: #FFF;
 }
 
 .about h2 {
     margin-top: 25px;
     margin-bottom: 40px;
+}
+
+.projects {
+    margin: 0 auto;
 }
 
 .projects h2 {
@@ -41,8 +58,7 @@ header h2 {
     Landscape view
 --*/
 @media screen and (min-width: 768px){
-/* Styles */
-    body {
+    .projects {
         max-width: 710px;
     }
 }
@@ -51,18 +67,9 @@ header h2 {
     Desktop and laptops
 --*/
 @media only screen and (min-width: 1024px) {
-/* Styles */
-    body {
+    .projects {
         max-width: 900px;
     }
-
-    .hgroup {
-        text-align: left;
-        margin-left: 45px;
-        display: inline-block;
-    }
-}
-
 }
 
 /*--
