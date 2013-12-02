@@ -1,72 +1,72 @@
 body {
-	margin: 0 auto;
+    margin: 0 auto;
 }
 
 header {
-	margin: 35px 0 0;
+    margin: 35px 0 0;
 }
 
 .switch {
-	position: fixed;
-	top: 20px;
-	left: 20px;
+    position: fixed;
+    top: 20px;
+    left: 20px;
 }
 
 header h2 {
-	margin: 5px 0 0 60px;
+    margin: 5px 0 0 60px;
 }
 
 .about h2 {
-	margin-top: 25px;
-	margin-bottom: 40px;
+    margin-top: 25px;
+    margin-bottom: 40px;
 }
 
 .projects h2 {
-	padding-top: 35px;
-	margin-bottom: 15px;
-	margin-top: 35px;
+    padding-top: 35px;
+    margin-bottom: 15px;
+    margin-top: 35px;
 }
 
 .about {
-	margin-bottom: 30px;
+    margin-bottom: 30px;
 }
 
 .sites li {
-	margin: 10px;
-	display: inline-block;
-	font-size: 0.7em;
+    margin: 10px;
+    display: inline-block;
+    font-size: 0.7em;
 }
 
 /*--
-	Landscape view
+    Landscape view
 --*/
 @media screen and (min-width: 768px){
 /* Styles */
-	body {
-		max-width: 710px;
-	}
+    body {
+        max-width: 710px;
+    }
 }
 
 /*--
-	Desktop and laptops
+    Desktop and laptops
 --*/
 @media only screen and (min-width: 1024px) {
 /* Styles */
-	body {
-		max-width: 900px;
-	}
+    body {
+        max-width: 900px;
+    }
 
-	.hgroup {
-		text-align: left;
-		margin-left: 45px;
-		display: inline-block;
-	}
+    .hgroup {
+        text-align: left;
+        margin-left: 45px;
+        display: inline-block;
+    }
 }
 
 }
 
 /*--
-	Large screens
+    Large screens
 --*/
 @media only screen and (min-width : 1824px) {
 /* Styles */
