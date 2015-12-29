@@ -1,8 +1,0 @@
-/* TEAM */
-	Frontender: Guillermo Paz
-	Twitter: @pazguille
-	From:Buenos Aires, Argentina
-
-
-/* SITE */
-	Doctype:HTML5

@@ -1,0 +1,69 @@
+﻿/**
+ * Small Screens
+ */
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: #2B323A;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0 auto;
+}
+
+.header {
+  border-bottom: 5px solid #B53D25;
+  background-color:#F3F5FA;
+  position: relative;
+  min-height: 100%;
+  display: table;
+  width: 100%;
+  color: #2B323A;
+}
+
+.header--wrap {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.header__avatar {
+  max-width: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.header__info {
+  display: inline-block;
+  width: 40%;
+  position: relative;
+  top: -50px;
+  left: 10%;
+}
+
+.header__name {
+  font-size: 3.9em;
+  font-weight: 400;
+  margin:0 0 10px;
+}
+
+.header__intro {
+  font-size: 1.3em;
+  line-height: 1.4em;
+  margin:0;
+}
+
+/**
+ * Medium Screens
+ */
+@media all and (min-width:40em) {}
+
+/**
+ * Large Screens
+ */
+@media all and (min-width: 54em) {}
+
+.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}

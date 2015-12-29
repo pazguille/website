@@ -1,0 +1,11 @@
+{
+  "name": "pazguille.me",
+  "version": "1.0.0",
+  "description": "My personal website.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pazguille/pazguille.me.git"
+  },
+  "author": "Guille Paz <guille87paz@gmail.com>",
+  "license": "MIT"
+}
