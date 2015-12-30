@@ -1,28 +1,4 @@
-﻿.grid {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.grid-cell {
-  flex: 1;
-}
-
-.grid--gutters {
-  margin: -1em 0 1em -1em;
-}
-
-.grid--gutters > .grid-cell {
-  padding: 2em 0 0 2em;
-}
-
-/**
+﻿/**
  * Small Screens
  */
 html,
@@ -59,29 +35,39 @@ a {
 
 .header__avatar {
   max-width: 100%;
+  width: 60%;
   position: absolute;
   bottom: 0;
   right: 0;
+  opacity: .4;
 }
 
 .header__info {
   display: inline-block;
-  width: 40%;
   position: relative;
-  top: -50px;
-  left: 10%;
+  padding: 15px;
 }
 
 .header__name {
-  font-size: 3.9em;
+  font-size: 2em;
   font-weight: 400;
   margin:0 0 10px;
 }
 
 .header__intro {
-  font-size: 1.3em;
+  font-size: 1em;
   line-height: 1.4em;
   margin:0;
+}
+
+.header__social {
+  list-style: none;
+  line-height: 35px;
+  padding: 0;
+}
+
+.grid-cell {
+  padding: .5em 0;
 }
 
 .projects {
@@ -165,11 +151,57 @@ a {
 /**
  * Medium Screens
  */
-@media all and (min-width:40em) {}
+@media all and (min-width:40em) {
+
+  .header__name {
+    font-size: 3.9em;
+  }
+
+  .header__intro {
+    font-size: 1.3em;
+  }
+
+}
 
 /**
  * Large Screens
  */
-@media all and (min-width: 54em) {}
+@media all and (min-width: 54em) {
+  .grid {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .grid-cell {
+    flex: 1;
+  }
+
+  .grid--gutters {
+    margin: -1em 0 1em -1em;
+  }
+
+  .grid--gutters > .grid-cell {
+    padding: 1.2em 0 0 1.2em;
+  }
+
+  .header__info {
+    padding: 0;
+    width: 40%;
+    top: -50px;
+    left: 10%;
+  }
+
+  .header__avatar {
+    width: 790px;
+    opacity: 1;
+  }
+}
 
 .github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}
