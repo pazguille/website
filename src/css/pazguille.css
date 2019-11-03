@@ -21,7 +21,7 @@ a {
   border-bottom: 5px solid #B53D25;
   background-color:#FAFAFA;
   position: relative;
-  min-height: 100%;
+  height: 100vh;
   display: table;
   width: 100%;
   color: #444;
