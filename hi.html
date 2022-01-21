@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Guille Paz - Front End Web Developer</title>
+    <link rel="shortcut icon" href="src/assets/favicon.ico">
+    <meta http-equiv="cleartype" content="on">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  </head>
+  <body>
+    <h1>Hi! 👋</h1>
+
+    <script>
+      window.addEventListener('load', () => {
+       try {
+         window.location.href = 'meli://home';
+       } catch(err) {
+         console.log('Not working');
+       }
+      });
+    </script>
+  </body>
+</html>
