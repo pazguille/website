@@ -1,96 +1,74 @@
-﻿/**
- * Small Screens
- */
-html,
-body {
-  height: 100%;
-}
-
-body {
+﻿body {
   background: #444;
-  color: #FFF;
-  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
   margin: 0 auto;
 }
-
-a {
-  color: rgba(68, 68, 68, 0.7);
-}
-
 .header {
-  border-bottom: 5px solid #B53D25;
-  background-color:#FAFAFA;
-  position: relative;
-  height: 100vh;
+  border-bottom: 5px solid #b53d25;
+  background-color: #fafafa;
+  height: 75vh;
   display: table;
   width: 100%;
   color: #444;
 }
-
 .header--wrap {
-  position: relative;
   display: table-cell;
   vertical-align: middle;
 }
-
 .header__avatar {
   max-width: 100%;
   width: 60%;
   position: absolute;
   bottom: 0;
   right: 0;
-  opacity: .4;
+  opacity: 0.4;
 }
-
 .header__info {
   display: inline-block;
   position: relative;
   padding: 15px;
 }
-
 .header__name {
   font-size: 2em;
   font-weight: 400;
-  margin:0 0 10px;
+  margin: 0 0 10px;
 }
-
 .header__intro {
   font-size: 1em;
   line-height: 1.4em;
-  margin:0;
+  margin: 0;
 }
-
 .header__social {
   list-style: none;
   line-height: 35px;
   padding: 0;
 }
-
 .grid-cell {
-  padding: .5em 0;
+  padding: 0.5em 0;
 }
-
+.projects h3 {
+  font-size: 2em;
+}
 .projects {
   text-align: center;
   margin: 30px 4%;
 }
-
 .projects__card {
-  color: #FFF;
+  color: #fff;
   display: block;
   width: 100%;
   height: 310px;
   line-height: 310px;
   text-align: center;
   text-decoration: none;
-  opacity: .9;
+  opacity: 0.9;
   position: relative;
 }
-
 .projects__title {
   margin: 0;
+  font-size: 1.5em;
 }
-
 .projects__description {
   position: absolute;
   bottom: 0;
@@ -98,78 +76,76 @@ a {
   right: 0;
   font-size: 15px;
   line-height: 1.2em;
-  background: rgba(255,255,255,.7);
+  background: rgba(255, 255, 255, 0.7);
   color: #444;
   padding: 10px 15px;
   margin: 0;
 }
-
+.manifesto {
+  background-color: #111111;
+}
+.vitals {
+  background-color: #2b2b52;
+}
+.feriados {
+  background-color: #04aa9a;
+}
+.eldiego {
+  background-color: #182637;
+}
+.xstore {
+  background-color: #107c10;
+}
 .regalame {
   background-color: #9b51e0;
 }
-
-.bafrontend {
-  background-color: #e74c3c;
-}
-
 .frontendrescue {
   background-color: #e67e22;
 }
-
 .offline {
   background-color: #9b59b6;
 }
-
 .offlinestates {
   background-color: #34495e;
 }
-
 .slideout {
-  background-color: #4B5;
+  background-color: #4b5;
 }
-
 .tindercats {
-  background-color: #FF6B6B;
+  background-color: #ff6b6b;
 }
-
 .daturi {
   background-color: #95a5a6;
 }
-
+.haysubte {
+  background-color: #c75d5d;
+}
 .aload {
   background-color: #2c3e50;
 }
-
 .github {
-  background-color: #2E353C;
+  background-color: #2e353c;
 }
-
 .shuffle {
   background-color: #1abc9c;
 }
-
 .checked {
-  background-color: #2980B9;
+  background-color: #2980b9;
 }
 
-/**
- * Medium Screens
- */
-@media all and (min-width:40em) {
+footer {
+  text-align: center;
+  margin-bottom: 20px;
+}
 
+@media all and (min-width: 40em) {
   .header__name {
     font-size: 3.9em;
   }
-
   .header__intro {
     font-size: 1.3em;
   }
-
 }
-
-/**
- * Large Screens
- */
 @media all and (min-width: 54em) {
   .grid {
     display: -webkit-box;
@@ -182,28 +158,23 @@ a {
     margin: 0;
     padding: 0;
   }
-
   .grid-cell {
     flex: 1;
   }
-
   .grid--gutters {
     margin: -1em 0 1em -1em;
   }
-
   .grid--gutters > .grid-cell {
     padding: 1.2em 0 0 1.2em;
   }
-
   .header__info {
     padding: 0;
     width: 40%;
-    top: -50px;
+    top: 0px;
     left: 10%;
   }
-
   .header__avatar {
-    width: 790px;
+    width: 580px;
     opacity: 1;
   }
 }
