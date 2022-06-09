@@ -1,11 +1,20 @@
-﻿body {
-  background: #444;
+﻿@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v7/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+body {
+  background: #1C1C1C;
   color: #fff;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Inter", sans-serif;
   margin: 0 auto;
 }
 .header {
-  border-bottom: 5px solid #b53d25;
+  border-bottom: 2px solid #8D0B93;
   background-color: #fafafa;
   height: 75vh;
   display: table;
@@ -31,7 +40,6 @@
 }
 .header__name {
   font-size: 2em;
-  font-weight: 400;
   margin: 0 0 10px;
 }
 .header__intro {
@@ -56,14 +64,16 @@
 }
 .projects__card {
   color: #fff;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
-  height: 310px;
-  line-height: 310px;
-  text-align: center;
+  height: 260px;
+  padding-bottom: 40px;
   text-decoration: none;
   opacity: 0.9;
   position: relative;
+  border-radius: 10px 10px 0 0;
 }
 .projects__title {
   margin: 0;
@@ -80,6 +90,10 @@
   color: #444;
   padding: 10px 15px;
   margin: 0;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .manifesto {
   background-color: #111111;
