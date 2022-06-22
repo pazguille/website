@@ -1,0 +1,235 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <title>POC Videos</title>
+  <link href="https://unpkg.com/video.js/dist/video-js.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      background-color: black;
+    }
+
+    [hidden] {
+      display: none !important;
+    }
+
+    .carousel {
+      display: flex;
+      padding: 0;
+      margin: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: black;
+      list-style: none;
+      position: relative;
+
+      overflow-y: auto;
+      overflow-x: hidden;
+      flex-direction: column;
+      overscroll-behavior-y: contain;
+      scroll-snap-type: y mandatory;
+    }
+
+    .carousel li {
+      flex: none;
+      display: flex;
+      width: 100vw;
+      height: 100vh;
+      align-items: center;
+      justify-content: center;
+      scroll-snap-align: center;
+    }
+
+    .video {
+      position: relative;
+      overflow: hidden;
+      width: 360px;
+      height: 205px;
+    }
+
+    .fixed {
+      position: fixed;
+      top: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: 1;
+      background-color: black;
+      pointer-events: none;
+      touch-action: none;
+      opacity: 1;
+      will-change: opacity;
+      transition: opacity 150ms ease;
+    }
+
+    #preload,
+    #preload video {
+      position: absolute;
+      z-index: -1;
+      left: -100vh;
+    }
+
+    video {
+      width: 100vw;
+      height: 205px;
+      position: absolute;
+      top: 50%;
+      margin-top: -103px;
+      background: black;
+      pointer-events: none;
+      touch-action: none;
+    }
+
+    .vjs-hidden {
+      opacity: 0;
+      display: block !important;
+    }
+
+    .vjs-loading-spinner {
+      display: none !important;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <video id="video" class="fixed" playsinline preload="auto" muted></video>
+
+    <ul class="carousel">
+      <li><img class="video" decoding="async" height="360" height="203" src="poster-2.png" /></li>
+      <li><img class="video" decoding="async" height="360" height="203" src="poster-3.png" /></li>
+      <li><img class="video" decoding="async" height="360" height="203" src="poster-0.png" /></li>
+      <li><img class="video" decoding="async" height="360" height="203" src="poster-1.png" /></li>
+    </ul>
+
+    <video id="preload" playsinline preload="auto" autoplay muted></video>
+  </main>
+
+
+
+  <script src="https://unpkg.com/video.js/dist/video.js"></script>
+  <script src="https://unpkg.com/@videojs/http-streaming/dist/videojs-http-streaming.js"></script>
+  <script>
+    const playlist = [
+      'https://d349iirefh69i6.cloudfront.net/ivs/v1/013436950636/LFSEeA7B6u4J/2022/6/8/17/58/tT1xdMFcyka2/media/hls/recorded/master.m3u8',
+      'https://d349iirefh69i6.cloudfront.net/ivs/v1/013436950636/NWUPfmW6DILF/2022/6/8/19/59/hRIk0FMVu4rS/media/hls/recorded/master.m3u8',
+      'https://d349iirefh69i6.cloudfront.net/ivs/v1/013436950636/rs5SKrr5vMiA/2022/6/7/21/51/p60TwVnFoWNV/media/hls/recorded/master.m3u8',
+      'https://d349iirefh69i6.cloudfront.net/ivs/v1/013436950636/HHG33LGjFF0G/2022/6/8/13/42/aH4nynSO9tPf/media/hls/recorded/master.m3u8',
+    ];
+
+    const poster = [
+      'poster-2.png',
+      'poster-3.png',
+      'poster-0.png',
+      'poster-1.png',
+    ];
+
+    const $carousel = document.querySelector('.carousel');
+
+    const player = videojs('video', {
+      controls: false,
+    });
+    const $video = player.el_.querySelector('video');
+
+    // player.poster(poster[0]); => No anda como esperamos
+    $video.poster = poster[0];
+
+    player.src({
+      type: 'application/x-mpegURL',
+      src: playlist[0]
+    });
+
+    player.on('loadedmetadata', () => {
+      setTimeout(() => {
+        player.play();
+      }, 0);
+    });
+
+    // Lo apago porque genera un flash raro en safari que hay que revisar
+    const preload = videojs('preload');
+    preload.src({
+      type: 'application/x-mpegURL',
+      src: playlist[1]
+    });
+
+    document.querySelector('body').addEventListener('click', () => {
+      player.muted(false);
+      player.play();
+    }, { once: true });
+
+    let move = false;
+    let dir = null;
+    let index = 0;
+    let startOffsetY = 0;
+    let currentOffsetY = 0;
+
+    $carousel.addEventListener('touchmove', (eve) => {
+      const dif_y = eve.touches[0].pageY - startOffsetY;
+
+      if (dif_y >= currentOffsetY) {
+        dir = 'back';
+      } else {
+        dir = 'next';
+      }
+
+      currentOffsetY = dif_y;
+
+      if (!player.hasClass('vjs-hidden')) {
+        player.hide();
+        player.pause();
+      }
+
+      move = true;
+
+    }, { passive: true, capture: false, });
+
+    $carousel.addEventListener('touchend', () => {
+      if (move) {
+        move = false;
+
+        if (index - 1 < 0 && dir === 'back') {
+          player.show();
+          player.play();
+          return;
+        }
+
+        if (index + 1 === playlist.length && dir === 'next') {
+          player.show();
+          player.play();
+          return;
+        }
+
+        if (dir === 'back') {
+          index--;
+        } else {
+          index++;
+        }
+
+        $video.poster = poster[index];
+
+        setTimeout(() => {
+          player.show();
+
+          if (index + 1 < playlist.length) {
+            preload.src({
+              type: 'application/x-mpegURL',
+              src: playlist[index + 1]
+            });
+          }
+        }, 650);
+
+        player.src({
+          type: 'application/x-mpegURL',
+          src: playlist[index],
+        });
+      }
+    }, { passive: true, capture: false, });
+
+  </script>
+</body>
+
+</html>

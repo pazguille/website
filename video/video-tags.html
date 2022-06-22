@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <title>Videos</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #2f2f2f;
+    }
+
+    .carousel {
+      display: flex;
+      padding: 10px;
+      margin: 50px 0;
+      gap: 15px;
+      overflow-x: auto;
+      overflow-y: hidden;
+      list-style: none;
+      overscroll-behavior-x: contain;
+      scroll-snap-type: x mandatory;
+    }
+
+    .video {
+      width: calc(100vw - 0px);
+      height: calc(100vh - 120px);
+      border-radius: 10px;
+      overflow: hidden;
+      flex: none;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      scroll-snap-align: center;
+      background-color: black;
+
+    }
+  </style>
+</head>
+
+<body>
+  <main class="carousel">
+    <video class="video preload-more" playsinline preload="auto" autoplay muted
+      src="https://media.rawg.io/media/stories/a8e/a8eb00513dcd97059107539370c02f97.mp4">
+    </video>
+  </main>
+  <script>
+    window.requestIdleCallback = window.requestIdleCallback || function (cb) {
+      var start = Date.now();
+      return setTimeout(function () {
+        cb({
+          didTimeout: false,
+          timeRemaining: function () {
+            return Math.max(0, 50 - (Date.now() - start));
+          }
+        });
+      }, 1);
+    };
+
+    const playlist = [
+      'https://media.rawg.io/media/stories/a8e/a8eb00513dcd97059107539370c02f97.mp4',
+      'https://media.rawg.io/media/stories/db4/db4bd7f2af197dc5f2ad3d9d91302e37.mp4',
+      'https://media.rawg.io/media/stories/329/32960c79b548d93797c6a4dfae1931c2.mp4',
+      'https://media.rawg.io/media/stories/c38/c38f88ae99cd6287d4c47db5e4147baf.mp4',
+      'https://media.rawg.io/media/stories/a25/a257f298e1de01ef2a077da02a5c8ee8.mp4',
+      'https://media.rawg.io/media/stories/53d/53df951d3eabd64007549efa2a6f8547.mp4',
+      'https://media.rawg.io/media/stories/8e2/8e2321fd03b6893857fceda2ad8aa6da.mp4',
+      'https://media.rawg.io/media/stories/d99/d99508eb64e8f67a9d82fe629d1d7b8c.mp4',
+      'https://media.rawg.io/media/stories/7a1/7a149be5b58a5de79c6802bff6fb1233.mp4'
+    ];
+
+    const $carousel = document.querySelector('.carousel');
+
+    function createVideoTag(url) {
+      const video = document.createElement('video');
+      // video.toggleAttribute('controls');
+      video.setAttribute('autoplay', true);
+      video.setAttribute('muted', true);
+      video.setAttribute('playsinline', true);
+      video.setAttribute('preload', 'auto');
+      video.classList.add('preload-more');
+      video.classList.add('video');
+      video.src = url;
+      videoIO(video);
+      $carousel.appendChild(video);
+    }
+
+    let len = 1;
+    function preloadVideo() {
+      if (len > 8) { return; }
+      const next = playlist[len++];
+
+      createVideoTag(next);
+
+      // fetch(next)
+      //   .then(res => res.blob())
+      //   .then((blob) => {
+      //     createVideoTag(URL.createObjectURL(blob));
+      //   });
+    }
+
+    let $current = null;
+
+    function videoIO(video) {
+      const o = new IntersectionObserver(async (entries) => {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            // entry.target.play();
+            $current = entry.target;
+            if (entry.target.classList.contains('preload-more')) {
+              entry.target.classList.remove('preload-more');
+              preloadVideo();
+            }
+          } else {
+            entry.target.pause();
+          }
+        });
+      }, {
+        threshold: 0.5,
+      });
+      o.observe(video);
+    }
+
+    const videos = [].slice.call(document.querySelectorAll('.video'));
+    videos.forEach(videoIO);
+
+
+    $current = videos[0];
+    document.querySelector('body').addEventListener('click', () => {
+      setTimeout(() => {
+        console.log('HERE', $current);
+        requestIdleCallback(() => {
+          $current.play();
+          $current.muted = false;
+          console.log('play');
+        });
+      }, 0)
+    });
+
+    // document.querySelector('body').addEventListener('touchstart', () => {
+    //   videos[0].muted = false;
+    // }, { once: true });
+  </script>
+</body>
+
+</html>
