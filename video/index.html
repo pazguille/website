@@ -43,6 +43,8 @@
       align-items: center;
       justify-content: center;
       scroll-snap-align: center;
+
+      position: relative;
     }
 
     .video {
@@ -52,27 +54,7 @@
       height: 205px;
     }
 
-    .fixed {
-      position: fixed;
-      top: 0;
-      width: 100vw;
-      height: 100vh;
-      z-index: 1;
-      background-color: black;
-      pointer-events: none;
-      touch-action: none;
-      opacity: 1;
-      will-change: opacity;
-      transition: opacity 150ms ease;
-    }
-
-    #preload,
-    #preload video {
-      position: absolute;
-      z-index: -1;
-      left: -100vh;
-    }
-
+    .fixed,
     video {
       width: 100vw;
       height: 205px;
@@ -82,6 +64,14 @@
       background: black;
       pointer-events: none;
       touch-action: none;
+      z-index: 1;
+    }
+
+    #preload,
+    #preload video {
+      position: absolute;
+      z-index: -1;
+      left: -100vh;
     }
 
     .vjs-hidden {
@@ -97,10 +87,11 @@
 
 <body>
   <main>
-    <video id="video" class="fixed" playsinline preload="auto" muted></video>
-
     <ul class="carousel">
-      <li><img class="video" decoding="async" height="360" height="203" src="poster-2.png" /></li>
+      <li>
+        <img class="video" decoding="async" height="360" height="203" src="poster-2.png" />
+        <video id="video" class="fixed" playsinline preload="auto" muted></video>
+      </li>
       <li><img class="video" decoding="async" height="360" height="203" src="poster-3.png" /></li>
       <li><img class="video" decoding="async" height="360" height="203" src="poster-0.png" /></li>
       <li><img class="video" decoding="async" height="360" height="203" src="poster-1.png" /></li>
@@ -108,8 +99,6 @@
 
     <video id="preload" playsinline preload="auto" autoplay muted></video>
   </main>
-
-
 
   <script src="https://unpkg.com/video.js/dist/video.js"></script>
   <script src="https://unpkg.com/@videojs/http-streaming/dist/videojs-http-streaming.js"></script>
@@ -178,10 +167,10 @@
 
       currentOffsetY = dif_y;
 
-      if (!player.hasClass('vjs-hidden')) {
-        player.hide();
-        player.pause();
-      }
+      // if (!player.hasClass('vjs-hidden')) {
+      //   player.hide();
+      //   player.pause();
+      // }
 
       move = true;
 
@@ -192,14 +181,14 @@
         move = false;
 
         if (index - 1 < 0 && dir === 'back') {
-          player.show();
-          player.play();
+          // player.show();
+          // player.play();
           return;
         }
 
         if (index + 1 === playlist.length && dir === 'next') {
-          player.show();
-          player.play();
+          // player.show();
+          // player.play();
           return;
         }
 
@@ -212,15 +201,17 @@
         $video.poster = poster[index];
 
         setTimeout(() => {
-          player.show();
+          $carousel.children[index].appendChild(player.el_);
+          // player.show();
 
           if (index + 1 < playlist.length) {
             preload.src({
               type: 'application/x-mpegURL',
               src: playlist[index + 1]
             });
+
           }
-        }, 650);
+        }, 0);
 
         player.src({
           type: 'application/x-mpegURL',
