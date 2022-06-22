@@ -68,8 +68,6 @@
       height: 205px;
     }
 
-
-
     #preload,
     #preload video {
       position: absolute;
@@ -210,13 +208,13 @@
         $carousel.children[index].appendChild(player.el_);
 
         setTimeout(() => {
-          if (index + 1 < playlist.length) {
+          if (index + 1 < playlist.length && dir === 'next') {
             preload.src({
               type: 'application/x-mpegURL',
               src: playlist[index + 1]
             });
           }
-        }, 600);
+        }, 650);
       }
     }, { passive: true, capture: false, });
 
