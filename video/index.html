@@ -54,18 +54,21 @@
       height: 205px;
     }
 
-    .fixed,
-    video {
-      width: 100vw;
-      height: 205px;
+    .player {
       position: absolute;
       top: 50%;
       margin-top: -103px;
-      background: black;
       pointer-events: none;
       touch-action: none;
-      z-index: 1;
     }
+
+    .player,
+    .player video {
+      width: 100vw;
+      height: 205px;
+    }
+
+
 
     #preload,
     #preload video {
@@ -90,7 +93,7 @@
     <ul class="carousel">
       <li>
         <img class="video" decoding="async" height="360" height="203" src="poster-2.png" />
-        <video id="video" class="fixed" playsinline preload="auto" muted></video>
+        <video id="player" class="player" playsinline preload="auto" muted></video>
       </li>
       <li><img class="video" decoding="async" height="360" height="203" src="poster-3.png" /></li>
       <li><img class="video" decoding="async" height="360" height="203" src="poster-0.png" /></li>
@@ -119,13 +122,13 @@
 
     const $carousel = document.querySelector('.carousel');
 
-    const player = videojs('video', {
+    const player = videojs('player', {
       controls: false,
     });
     const $video = player.el_.querySelector('video');
 
     // player.poster(poster[0]); => No anda como esperamos
-    $video.poster = poster[0];
+    // $video.poster = poster[0];
 
     player.src({
       type: 'application/x-mpegURL',
@@ -133,9 +136,8 @@
     });
 
     player.on('loadedmetadata', () => {
-      setTimeout(() => {
-        player.play();
-      }, 0);
+      $video.style.zIndex = 1;
+      player.play();
     });
 
     // Lo apago porque genera un flash raro en safari que hay que revisar
@@ -198,25 +200,23 @@
           index++;
         }
 
-        $video.poster = poster[index];
+
+        $video.style.zIndex = -1;
+        // $video.poster = poster[index];
+        player.src({
+          type: 'application/x-mpegURL',
+          src: playlist[index],
+        });
+        $carousel.children[index].appendChild(player.el_);
 
         setTimeout(() => {
-          $carousel.children[index].appendChild(player.el_);
-          // player.show();
-
           if (index + 1 < playlist.length) {
             preload.src({
               type: 'application/x-mpegURL',
               src: playlist[index + 1]
             });
-
           }
-        }, 0);
-
-        player.src({
-          type: 'application/x-mpegURL',
-          src: playlist[index],
-        });
+        }, 600);
       }
     }, { passive: true, capture: false, });
 
