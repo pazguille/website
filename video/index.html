@@ -89,13 +89,13 @@
 <body>
   <main>
     <ul class="carousel">
-      <li>
+      <li data-index="0">
         <img class="video" decoding="async" height="360" height="203" src="poster-2.png" />
         <video id="player" class="player" playsinline preload="auto" muted></video>
       </li>
-      <li><img class="video" decoding="async" height="360" height="203" src="poster-3.png" /></li>
-      <li><img class="video" decoding="async" height="360" height="203" src="poster-0.png" /></li>
-      <li><img class="video" decoding="async" height="360" height="203" src="poster-1.png" /></li>
+      <li data-index="1"><img class="video" decoding="async" height="360" height="203" src="poster-3.png" /></li>
+      <li data-index="2"><img class="video" decoding="async" height="360" height="203" src="poster-0.png" /></li>
+      <li data-index="3"><img class="video" decoding="async" height="360" height="203" src="poster-1.png" /></li>
     </ul>
 
     <video id="preload" playsinline preload="auto" autoplay muted></video>
@@ -126,7 +126,7 @@
     const $video = player.el_.querySelector('video');
 
     // player.poster(poster[0]); => No anda como esperamos
-    // $video.poster = poster[0];
+    $video.poster = poster[0];
 
     player.src({
       type: 'application/x-mpegURL',
@@ -150,73 +150,48 @@
       player.play();
     }, { once: true });
 
-    let move = false;
-    let dir = null;
+
     let index = 0;
-    let startOffsetY = 0;
-    let currentOffsetY = 0;
+    let $current = null;
 
-    $carousel.addEventListener('touchmove', (eve) => {
-      const dif_y = eve.touches[0].pageY - startOffsetY;
+    function videoIO(video) {
+      const o = new IntersectionObserver(async (entries) => {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
 
-      if (dif_y >= currentOffsetY) {
-        dir = 'back';
-      } else {
-        dir = 'next';
-      }
+            $current = entry.target;
+            if (index === Number($current.dataset.index)) {
+              return;
+            }
 
-      currentOffsetY = dif_y;
+            index = $current.dataset.index;
 
-      // if (!player.hasClass('vjs-hidden')) {
-      //   player.hide();
-      //   player.pause();
-      // }
-
-      move = true;
-
-    }, { passive: true, capture: false, });
-
-    $carousel.addEventListener('touchend', () => {
-      if (move) {
-        move = false;
-
-        if (index - 1 < 0 && dir === 'back') {
-          // player.show();
-          // player.play();
-          return;
-        }
-
-        if (index + 1 === playlist.length && dir === 'next') {
-          // player.show();
-          // player.play();
-          return;
-        }
-
-        if (dir === 'back') {
-          index--;
-        } else {
-          index++;
-        }
-
-
-        $video.style.zIndex = -1;
-        // $video.poster = poster[index];
-        player.src({
-          type: 'application/x-mpegURL',
-          src: playlist[index],
-        });
-        $carousel.children[index].appendChild(player.el_);
-
-        setTimeout(() => {
-          if (index + 1 < playlist.length && dir === 'next') {
-            preload.src({
+            $video.style.zIndex = -1;
+            $video.poster = poster[index];
+            player.src({
               type: 'application/x-mpegURL',
-              src: playlist[index + 1]
+              src: playlist[index],
             });
+            $carousel.children[index].appendChild(player.el_);
+
+            setTimeout(() => {
+              if (index + 1 < playlist.length && playlist[index + 1]) {
+                preload.src({
+                  type: 'application/x-mpegURL',
+                  src: playlist[index + 1]
+                });
+              }
+            }, 650);
           }
-        }, 650);
-      }
-    }, { passive: true, capture: false, });
+        });
+      }, {
+        threshold: 1.0,
+      });
+      o.observe(video);
+    }
+
+    const videos = [].slice.call(document.querySelectorAll('.carousel li'));
+    videos.forEach(videoIO);
 
   </script>
 </body>
