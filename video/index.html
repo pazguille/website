@@ -154,47 +154,46 @@
     let index = 0;
     let $current = null;
 
-    function videoIO(video) {
-      const o = new IntersectionObserver(async (entries) => {
-        entries.forEach(function (entry) {
-          if (entry.isIntersecting) {
-            $current = entry.target;
-            if (index === Number($current.dataset.index)) {
-              return;
-            }
-
-            index = Number($current.dataset.index);
-
-            $video.poster = poster[index]; // remove default poster on android
-
-            setTimeout(() => {
-              player.src({
-                type: 'application/x-mpegURL',
-                src: playlist[index],
-              });
-              player.hide();
-            }, 25);
-
-            setTimeout(() => {
-              if (index + 1 < playlist.length && playlist[index + 1]) {
-                preload.src({
-                  type: 'application/x-mpegURL',
-                  src: playlist[index + 1]
-                });
-              }
-            }, 650);
+    const io = new IntersectionObserver(async (entries) => {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          $current = entry.target;
+          if (index === Number($current.dataset.index)) {
+            return;
           }
-        });
-      }, {
-        root: $carousel,
-        threshold: 1.0,
-        rootMargin: '0px',
-      });
-      o.observe(video);
-    }
 
-    const videos = [].slice.call(document.querySelectorAll('.carousel > li'));
-    videos.forEach(videoIO);
+          index = Number($current.dataset.index);
+
+          $video.poster = poster[index]; // remove default poster on android
+
+          setTimeout(() => {
+            player.src({
+              type: 'application/x-mpegURL',
+              src: playlist[index],
+            });
+            player.hide();
+          }, 25);
+
+          setTimeout(() => {
+            if (index + 1 < playlist.length && playlist[index + 1]) {
+              preload.src({
+                type: 'application/x-mpegURL',
+                src: playlist[index + 1]
+              });
+            }
+          }, 650);
+        }
+      });
+    }, {
+      root: $carousel,
+      threshold: 1.0,
+      rootMargin: '0px',
+    });
+
+    const videos = document.querySelectorAll('.carousel > li');
+    videos.forEach((video) => {
+      io.observe(video);
+    });
 
   </script>
 </body>
