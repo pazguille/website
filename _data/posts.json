@@ -1,0 +1,26 @@
+[
+  {
+    "type": "github",
+    "url": "https://blog.pazguille.me/2022/server-components-y-client-components",
+    "title": "Server Components y Client Components",
+    "description": "Un skill importante que se necesita en frontend es diferenciar componentes server-side y client-side."
+  },
+  {
+    "type": "github",
+    "url": "https://blog.pazguille.me/2021/que-aprendimos-al-trabajar-en-accesibilidad-digital-en-meli",
+    "title": "Qué aprendimos al trabajar en accesibilidad digital",
+    "description": "En Mercado Libre comenzamos un recorrido para ofrecer un producto accesible y queremos compartir lo que fuimos aprendiendo."
+  },
+  {
+    "type": "github",
+    "url": "https://blog.pazguille.me/2020/react-una-decision-de-negocio",
+    "title": "React: una decisión de negocio",
+    "description": "A principios de 2016 empecé a probar React y pude \"ver\" con mis propios dedos los beneficios que brinda en la experiencia de desarrollo y en la performance de la UI."
+  },
+  {
+    "type": "github",
+    "url": "https://blog.pazguille.me/2020/primeros-pasos-en-web",
+    "title": "Primeros pasos en web",
+    "description": "Si estás arrancado en web sugiero priorizar conocimientos básicos y conocer las herramientas estándar con las que vas a poder probar todo sin instalarte nada."
+  }
+]

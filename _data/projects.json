@@ -1,0 +1,114 @@
+[
+  [
+    {
+      "type": "xstore",
+      "url": "https://xstoregames.com/",
+      "title": "XStore Games",
+      "description": "Explora la amplia colección de títulos de videojuegos en el catálogo de juegos de Xbox con precios argentinos (impuestos incluídos)."
+    },
+    {
+      "type": "vitals",
+      "url": "https://vitals-leaderboard.pazguille.me/",
+      "title": "Web Vitals Leaderboard",
+      "description": "The simplest way to understand how your site's user experience compares to other major sites in your industry."
+    },
+    {
+      "type": "feriados",
+      "url": "https://feriados.pazguille.me",
+      "title": "Feriados",
+      "description": "Web App para ver los feriados nacionales de Argentina."
+    }
+  ],
+  [
+    {
+      "type": "manifesto",
+      "url": "https://manifesto.pazguille.me",
+      "title": "Manifiesto",
+      "description": "Algunos principios e intenciones que fui aprendiendo y adoptando a la hora de desarrollar frontends."
+    },
+    {
+      "type": "eldiego",
+      "url": "https://eldiego.pazguille.me",
+      "title": "MaradonApp",
+      "description": "✊⚽️ Frases aleatorias del Diego para recordar y compartir."
+    },
+    {
+      "type": "tindercats",
+      "url": "https://tindercats.pazguille.me/",
+      "title": "Tindercats",
+      "description": "Any cat can change your life."
+    },
+    {
+      "type": "slideout",
+      "url": "https://slideout.js.org",
+      "title": "Slideout.js",
+      "description": "A touch slideout navigation menu for your mobile web apps."
+    }
+  ],
+  [
+    {
+      "type": "offlinestates",
+      "url": "http://offlinestat.es/",
+      "title": "Offline States",
+      "description": "What show applications when we have not internet connection."
+    },
+    {
+      "type": "regalame",
+      "url": "https://regalame.app/",
+      "title": "regalame.app",
+      "description": "Crea listas de regalos para compartir con amigos y familia, usando tus favoritos de Mercado Libre."
+    },
+    {
+      "type": "frontendrescue",
+      "url": "https://uptodate.pazguille.me/",
+      "title": "Frontend Rescue",
+      "description": "How to keep up to date on Front-end Technologies? - The Recipe"
+    }
+  ],
+  [
+    {
+      "type": "offline",
+      "url": "https://github.com/pazguille/offline-first",
+      "title": "Awesome Offline-First",
+      "description": "Everything you need to know to create offline-first web apps."
+    },
+    {
+      "type": "daturi",
+      "url": "https://daturi.pazguille.me/",
+      "title": "Daturi",
+      "description": "Converts files to Base64."
+    },
+    {
+      "type": "haysubte",
+      "url": "http://haysubte.herokuapp.com/",
+      "title": "¿HaySubte?",
+      "description": "Web App para ver el Estado del Subte"
+    },
+    {
+      "type": "aload",
+      "url": "https://pazguille.github.io/aload/",
+      "title": "aload",
+      "description": "Loads asynchronously images, scripts, styles and more!"
+    }
+  ],
+  [
+    {
+      "type": "shuffle",
+      "url": "https://pazguille.github.io/shuffle-array/",
+      "title": "shuffle-array",
+      "description": "Randomize the order of the elements in a given array."
+    },
+    {
+      "type": "github",
+      "url": "https://pazguille.github.io/github-card/",
+      "title": "<github-card>",
+      "description": "A web component to show a profile-card for your Github account."
+    },
+    {
+      "type": "checked",
+      "url": "https://pazguille.github.io/checked/",
+      "title": "Checked UI",
+      "description": "UI components using :checked CSS pseudo-class selectors."
+    }
+  ]
+]
