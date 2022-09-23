@@ -8,7 +8,7 @@
     },
     {
       "type": "vitals",
-      "url": "https://vitals-leaderboard.pazguille.me/",
+      "url": "https://web-vitals.pazguille.me/",
       "title": "Web Vitals Leaderboard",
       "description": "The simplest way to understand how your site's user experience compares to other major sites in your industry."
     },
