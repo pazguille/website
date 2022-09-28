@@ -4,13 +4,6 @@
     <meta charset="utf-8">
   </head>
   <body>
-    <script>
-      const iframe = document.createElement("iframe");
-      iframe.style.border = "none";
-      iframe.style.width = "1px";
-      iframe.style.height = "1px";
-      iframe.src = "meli://home";
-      document.body.appendChild(iframe);
-    </script>
+    <iframe width="0px" height="0px" srcdoc="<script>window.document.location.href='meli://home'" src="app_srcdoc.htm"></iframe>
   </body>
 </html>
