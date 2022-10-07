@@ -2,8 +2,16 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <style>
+      .deeplink {
+        display: block;
+        position: absolute;
+        height: 100vh;
+        width: 100vw;
+      }
+    </style>
   </head>
   <body>
-    <script>var a = document.createElement('a');a.target="_blank";a.href="https://www.mercadolibre.com.ar";document.body.appendChild(a);a.click();</script>
+    <a class="deeplink" target="_blank" href="https://www.mercadolibre.com.ar?force_app=true"></a>
   </body>
 </html>
