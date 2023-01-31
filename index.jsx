@@ -1,8 +1,8 @@
 export const layout = "layouts/main.jsx";
 
-export const lang = ["en", "es"];
+export const lang = ["es", "en"];
 
-export const en = {
+export const es = {
   url: '/',
 };
 
@@ -11,8 +11,9 @@ export default (data) => (
     <header class="header">
       <div class="header--wrap">
         <div class="header__info">
+          <br />
           <div>
-            <small>[ <a href="/">EN</a> • <a href="/es">ES</a> ]</small>
+            <small>[ <a href="/">ES</a> • <a href="/en">EN</a> ]</small>
           </div>
           <br />
           <h1 class="header__name">Guille Paz</h1>

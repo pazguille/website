@@ -11,7 +11,7 @@ export default ({ lang, children }) => (
       <meta name="google-site-verification" content="qPlZxRIR0Jh4xv4EpVMKTdMkHUc6QkA90FJ36-aeNRI" />
       <meta name="msvalidate.01" content="E69BB1A31D65F1F707C29A72889383D9" />
       <link href="https://www.googletagmanager.com" rel="preconnect" crossorigin />
-      <link rel="alternate" hreflang="es" href="https://pazguille.me/es" />
+      <link rel="alternate" hreflang="en" href="https://pazguille.me/en" />
       <link rel="stylesheet" href="/src/css/pazguille.css" />
     </head>
     <body>
