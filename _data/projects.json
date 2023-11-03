@@ -80,7 +80,7 @@
     },
     {
       "type": "haysubte",
-      "url": "http://haysubte.herokuapp.com/",
+      "url": "https://haysubte.fly.dev/",
       "title": "¿HaySubte?",
       "description": "Web App para ver el Estado del Subte"
     },
