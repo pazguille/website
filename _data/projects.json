@@ -53,12 +53,6 @@
       "description": "What show applications when we have not internet connection."
     },
     {
-      "type": "regalame",
-      "url": "https://regalame.app/",
-      "title": "regalame.app",
-      "description": "Crea listas de regalos para compartir con amigos y familia, usando tus favoritos de Mercado Libre."
-    },
-    {
       "type": "frontendrescue",
       "url": "https://uptodate.pazguille.me/",
       "title": "Frontend Rescue",
