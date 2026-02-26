@@ -3,46 +3,92 @@
     {
       "type": "xstore",
       "url": "https://xstoregames.com/",
-      "title": "XStore Games",
-      "description": "Explora la amplia colección de títulos de videojuegos en el catálogo de juegos de Xbox con precios argentinos (impuestos incluídos)."
+      "title": "XStoreGames",
+      "description": "Explora la amplia colección de títulos de videojuegos en el catálogo de juegos de Xbox con precios argentinos (impuestos incluídos).",
+      "icon": "<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-gamepad2-icon lucide-gamepad-2'><line x1='6' x2='10' y1='11' y2='11'/><line x1='8' x2='8' y1='9' y2='13'/><line x1='15' x2='15.01' y1='12' y2='12'/><line x1='18' x2='18.01' y1='10' y2='10'/><path d='M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.151A4 4 0 0 0 17.32 5z'/></svg>",
+      "featured": true
+    },
+    {
+      "type": "mangos-app",
+      "url": "https://tusmangos.com/",
+      "title": "Mangos App",
+      "description": "La forma más rápida de llevar tus gastos directamente en Google Sheets. Sin fricción, sin complicaciones.",
+      "icon": "<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-wallet'><path d='M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1'/><path d='M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4'/></svg>",
+      "featured": true
+    },
+    {
+      "type": "teno",
+      "url": "https://teno.pazguille.me/",
+      "title": "Teno",
+      "description": "A markdown-based note-taking web app with Deno 📝 🦕",
+      "icon": "<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-notebook-pen'><path d='M13.4 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7.4'/><path d='M2 6h4'/><path d='M2 10h4'/><path d='M2 14h4'/><path d='M2 18h4'/><path d='M21.378 5.626a1 1 0 1 0-3.004-3.004l-5.01 5.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z'/></svg>"
     },
     {
       "type": "vitals",
       "url": "https://web-vitals.pazguille.me/",
       "title": "Web Vitals Leaderboard",
-      "description": "The simplest way to understand how your site's user experience compares to other major sites in your industry."
+      "description": "The simplest way to understand how your site's user experience compares to other major sites in your industry.",
+      "icon": "<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-zap-icon lucide-zap'><path d='M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z'/></svg>"
     },
     {
       "type": "feriados",
       "url": "https://feriados.pazguille.me",
       "title": "Feriados",
-      "description": "Web App para ver los feriados nacionales de Argentina."
-    }
-  ],
-  [
+      "description": "Web App para ver los feriados nacionales de Argentina.",
+      "icon": "<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-calendar-icon lucide-calendar'><path d='M8 2v4'/><path d='M16 2v4'/><rect width='18' height='18' x='3' y='4' rx='2'/><path d='M3 10h18'/></svg>"
+    },
     {
       "type": "manifesto",
       "url": "https://manifesto.pazguille.me",
       "title": "Manifiesto",
-      "description": "Algunos principios e intenciones que fui aprendiendo y adoptando a la hora de desarrollar frontends."
+      "description": "Algunos principios e intenciones que fui aprendiendo y adoptando a la hora de desarrollar frontends.",
+      "icon": "<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-file-text-icon lucide-file-text'><path d='M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z'/><path d='M14 2v5a1 1 0 0 0 1 1h5'/><path d='M10 9H8'/><path d='M16 13H8'/><path d='M16 17H8'/></svg>"
+    }
+  ],
+  [
+    {
+      "type": "slideout",
+      "url": "https://slideout.js.org",
+      "title": "Slideout.js",
+      "description": "A touch slideout navigation menu for your mobile web apps.",
+      "icon": "<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-menu-icon lucide-menu'><path d='M4 5h16'/><path d='M4 12h16'/><path d='M4 19h16'/></svg>",
+      "featured": true
+    },
+    {
+      "type": "offline",
+      "url": "https://github.com/pazguille/offline-first",
+      "title": "Awesome Offline-First",
+      "description": "Everything you need to know to create offline-first web apps.",
+      "icon": "<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-globe-off-icon lucide-globe-off'><path d='M10.114 4.462A14.5 14.5 0 0 1 12 2a10 10 0 0 1 9.313 13.643'/><path d='M15.557 15.556A14.5 14.5 0 0 1 12 22 10 10 0 0 1 4.929 4.929'/><path d='M15.892 10.234A14.5 14.5 0 0 0 12 2a10 10 0 0 0-3.643.687'/><path d='M17.656 12H22'/><path d='M19.071 19.071A10 10 0 0 1 12 22 14.5 14.5 0 0 1 8.44 8.45'/><path d='M2 12h10'/><path d='m2 2 20 20'/></svg>",
+      "featured": true
     },
     {
       "type": "eldiego",
       "url": "https://eldiego.pazguille.me",
       "title": "MaradonApp",
-      "description": "✊⚽️ Frases aleatorias del Diego para recordar y compartir."
+      "description": "✊⚽️ Frases aleatorias del Diego para recordar y compartir.",
+      "icon": "<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-hand-fist-icon lucide-hand-fist'><path d='M12.035 17.012a3 3 0 0 0-3-3l-.311-.002a.72.72 0 0 1-.505-1.229l1.195-1.195A2 2 0 0 1 10.828 11H12a2 2 0 0 0 0-4H9.243a3 3 0 0 0-2.122.879l-2.707 2.707A4.83 4.83 0 0 0 3 14a8 8 0 0 0 8 8h2a8 8 0 0 0 8-8V7a2 2 0 1 0-4 0v2a2 2 0 1 0 4 0'/><path d='M13.888 9.662A2 2 0 0 0 17 8V5A2 2 0 1 0 13 5'/><path d='M9 5A2 2 0 1 0 5 5V10'/><path d='M9 7V4A2 2 0 1 1 13 4V7.268'/></svg>"
     },
     {
       "type": "tindercats",
       "url": "https://tindercats.pazguille.me/",
       "title": "Tindercats",
-      "description": "Any cat can change your life."
+      "description": "Any cat can change your life.",
+      "icon": "<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-cat-icon lucide-cat'><path d='M12 5c.67 0 1.35.09 2 .26 1.78-2 5.03-2.84 6.42-2.26 1.4.58-.42 7-.42 7 .57 1.07 1 2.24 1 3.44C21 17.9 16.97 21 12 21s-9-3-9-7.56c0-1.25.5-2.4 1-3.44 0 0-1.89-6.42-.5-7 1.39-.58 4.72.23 6.5 2.23A9.04 9.04 0 0 1 12 5Z'/><path d='M8 14v.5'/><path d='M16 14v.5'/><path d='M11.25 16.25h1.5L12 17l-.75-.75Z'/></svg>"
     },
     {
-      "type": "slideout",
-      "url": "https://slideout.js.org",
-      "title": "Slideout.js",
-      "description": "A touch slideout navigation menu for your mobile web apps."
+      "type": "daturi",
+      "url": "https://daturi.pazguille.me/",
+      "title": "Daturi",
+      "description": "Converts files to Base64.",
+      "icon": "<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-code-xml-icon lucide-code-xml'><path d='m18 16 4-4-4-4'/><path d='m6 8-4 4 4 4'/><path d='m14.5 4-5 16'/></svg>"
+    },
+    {
+      "type": "haysubte",
+      "url": "https://haysubte.fly.dev/",
+      "title": "¿HaySubte?",
+      "description": "Web App para ver el Estado del Subte",
+      "icon": "<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-train-front-icon lucide-train-front'><path d='M8 3.1V7a4 4 0 0 0 8 0V3.1'/><path d='m9 15-1-1'/><path d='m15 15 1-1'/><path d='M9 19c-2.8 0-5-2.2-5-5v-4a8 8 0 0 1 16 0v4c0 2.8-2.2 5-5 5Z'/><path d='m8 19-2 3'/><path d='m16 19 2 3'/></svg>"
     }
   ],
   [
@@ -50,59 +96,57 @@
       "type": "offlinestates",
       "url": "https://offlinestates-blog.tumblr.com/",
       "title": "Offline States",
-      "description": "What show applications when we have not internet connection."
+      "description": "What show applications when we have not internet connection.",
+      "featured": true,
+      "icon": "<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-wifi-off-icon lucide-wifi-off'><path d='M12 20h.01'/><path d='M8.5 16.429a5 5 0 0 1 7 0'/><path d='M5 12.859a10 10 0 0 1 5.17-2.69'/><path d='M19 12.859a10 10 0 0 0-2.007-1.523'/><path d='M2 8.82a15 15 0 0 1 4.177-2.643'/><path d='M22 8.82a15 15 0 0 0-11.288-3.764'/><path d='m2 2 20 20'/></svg>"
     },
     {
       "type": "frontendrescue",
       "url": "https://uptodate.pazguille.me/",
       "title": "Frontend Rescue",
-      "description": "How to keep up to date on Front-end Technologies? - The Recipe"
+      "description": "How to keep up to date on Front-end Technologies? - The Recipe",
+      "featured": true,
+      "icon": "<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-briefcase-medical-icon lucide-briefcase-medical'><path d='M12 11v4'/><path d='M14 13h-4'/><path d='M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2'/><path d='M18 6v14'/><path d='M6 6v14'/><rect width='20' height='14' x='2' y='6' rx='2'/></svg>"
     }
   ],
   [
     {
-      "type": "offline",
-      "url": "https://github.com/pazguille/offline-first",
-      "title": "Awesome Offline-First",
-      "description": "Everything you need to know to create offline-first web apps."
-    },
-    {
-      "type": "daturi",
-      "url": "https://daturi.pazguille.me/",
-      "title": "Daturi",
-      "description": "Converts files to Base64."
-    },
-    {
-      "type": "haysubte",
-      "url": "https://haysubte.fly.dev/",
-      "title": "¿HaySubte?",
-      "description": "Web App para ver el Estado del Subte"
+      "type": "github",
+      "url": "https://pazguille.github.io/github-card/",
+      "title": "<github-card>",
+      "description": "A web component to show a profile-card for your Github account.",
+      "icon": "<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-github-icon lucide-github'><path d='M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4'/><path d='M9 18c-4.51 2-5-2-7-2'/></svg>"
     },
     {
       "type": "aload",
       "url": "https://pazguille.github.io/aload/",
       "title": "aload",
-      "description": "Loads asynchronously images, scripts, styles and more!"
-    }
-  ],
-  [
-    {
-      "type": "shuffle",
-      "url": "https://pazguille.github.io/shuffle-array/",
-      "title": "shuffle-array",
-      "description": "Randomize the order of the elements in a given array."
-    },
-    {
-      "type": "github",
-      "url": "https://pazguille.github.io/github-card/",
-      "title": "<github-card>",
-      "description": "A web component to show a profile-card for your Github account."
+      "description": "Loads asynchronously images, scripts, styles and more!",
+      "icon": "<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-cloud-download-icon lucide-cloud-download'><path d='M12 13v8l-4-4'/><path d='m12 21 4-4'/><path d='M4.393 15.269A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.436 8.284'/></svg>",
+      "featured": true
     },
     {
       "type": "checked",
       "url": "https://pazguille.github.io/checked/",
       "title": "Checked UI",
-      "description": "UI components using :checked CSS pseudo-class selectors."
+      "description": "UI components using :checked CSS pseudo-class selectors.",
+      "icon": "<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-square-check-big-icon lucide-square-check-big'><path d='M21 10.656V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h12.344'/><path d='m9 11 3 3L22 4'/></svg>"
+    },
+    {
+      "type": "islandy",
+      "url": "https://islandy.pazguille.me/docs/introduction/",
+      "title": "Islandy",
+      "description": "🏝️ islandy: Islands meet Express.js & Preact",
+      "icon": "<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-tree-palm'><path d='M13 8c0-2.76-2.46-5-5.5-5S2 5.24 2 8h2l1-1 1 1h4'/><path d='M13 7.14A5.82 5.82 0 0 1 16.5 6c3.04 0 5.5 2.24 5.5 5h-3l-1-1-1 1h-3'/><path d='M5.89 9.71c-2.15 2.15-2.3 5.47-.35 7.43l4.24-4.25.7-.7.71-.71 2.12-2.12c-1.95-1.96-5.27-1.8-7.42.35'/><path d='M11 15.5c.5 2.5-.17 4.5-1 6.5h4c2-5.5-.5-12-1-14'/></svg>",
+      "featured": true
+    },
+    {
+      "type": "shuffle",
+      "url": "https://pazguille.github.io/shuffle-array/",
+      "title": "shuffle-array",
+      "description": "Randomize the order of the elements in a given array.",
+      "icon": "<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-shuffle-icon lucide-shuffle'><path d='m18 14 4 4-4 4'/><path d='m18 2 4 4-4 4'/><path d='M2 18h1.973a4 4 0 0 0 3.3-1.7l5.454-8.6a4 4 0 0 1 3.3-1.7H22'/><path d='M2 6h1.972a4 4 0 0 1 3.6 2.2'/><path d='M22 18h-6.041a4 4 0 0 1-3.3-1.8l-.359-.45'/></svg>",
+      "featured": true
     }
   ]
 ]
