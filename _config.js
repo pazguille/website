@@ -10,11 +10,10 @@ const site = lume();
 site.copy("src/assets", "src/assets");
 site.copy("CNAME");
 site.loadAssets([".css", ".ico", ".png", ".svg"]);
-site.use(jsx());
+site.use(jsx({ pageSubExtension: "" }));
 site.use(minify_html());
-site.use(multilanguage());
+site.use(multilanguage({ languages: ["es", "en"], defaultLanguage: "es" }));
 site.use(tailwindcss({
-  extensions: [".html", ".jsx"],
   options: {
     theme: {
       extend: {

@@ -1,6 +1,6 @@
 {
   "imports": {
-    "lume/": "https://deno.land/x/lume@v1.15.3/",
+    "lume/": "https://cdn.jsdelivr.net/gh/lumeland/lume@2.5.4/",
     "preact/jsx-runtime": "npm:preact@10.12.1/jsx-runtime",
     "preact": "npm:preact@10.12.1"
   }
