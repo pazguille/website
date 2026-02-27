@@ -977,7 +977,7 @@ video {
   --primary: #3b82f6;
 }
 .animate-pulse {
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+  font-family: auto !important;
 }
 body {
   margin: 0;
